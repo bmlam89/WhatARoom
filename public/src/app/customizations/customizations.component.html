@@ -1,8 +1,10 @@
 <div class="col-sm-2 customs">
   <h4>Customizations</h4><br>
-  <div class="list-group" id="changing_div">
-    <a href="javascript:;" class="list-group-item list-group-item-action options">Sofa</a><br>
-    <a href="javascript:;" class="list-group-item list-group-item-action options">Loveseat</a><br>
-    <a href="javascript:;" class="list-group-item list-group-item-action options">Sectional</a><br>    
-  </div>
+  <router-outlet name="page1"></router-outlet>
+  <router-outlet name="page2"></router-outlet>
+  <!--<div class="list-group" id="changing_div">
+    <a href="javascript:;" (click)="next(0)" class="list-group-item list-group-item-action options">Sofa</a><br>
+    <a href="javascript:;" (click)="next(1)" class="list-group-item list-group-item-action options">Loveseat</a><br>
+    <a href="javascript:;" (click)="next(2)" class="list-group-item list-group-item-action options">Sectional</a><br>    
+  </div>-->
 </div>

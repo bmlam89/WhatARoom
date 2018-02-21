@@ -1,10 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+
   <div class="row">
     <app-header></app-header>
   </div>
+  
   <div class="row">
-    <app-customizations></app-customizations>
+    <!--<app-customizations></app-customizations>
     <div class="col-sm-1"></div>
-    <app-renderer></app-renderer>
+    <app-renderer></app-renderer>-->
+
+    <router-outlet name="custom"></router-outlet>
+    <div class="col-sm-1"></div>
+    <router-outlet name="renderer"></router-outlet>
   </div>
-<router-outlet></router-outlet>
+
+  <div class="row">
+    <app-footer></app-footer>
+  </div>
+</div>
+
+<!--gotta figure out router outlet later-->
+<!--<router-outlet></router-outlet>-->
