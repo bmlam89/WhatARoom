@@ -10,8 +10,7 @@ import { ResultsComponent } from './renderer/results/results.component';
 const routes: Routes = [
   {path: '', component: CustomizationsComponent, outlet: "custom",
   children: [
-    {path: '', component: Page1Component, outlet: "page1"},
-    {path: '', component: Page2Component, outlet: "page2"}
+    {path: '', component: Page1Component, outlet: "page1"}
   ]},
   
   {path: '', component: RendererComponent, outlet: "renderer",

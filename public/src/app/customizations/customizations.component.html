@@ -1,10 +1,14 @@
 <div class="col-sm-2 customs">
   <h4>Customizations</h4><br>
-  <router-outlet name="page1"></router-outlet>
-  <router-outlet name="page2"></router-outlet>
-  <!--<div class="list-group" id="changing_div">
-    <a href="javascript:;" (click)="next(0)" class="list-group-item list-group-item-action options">Sofa</a><br>
-    <a href="javascript:;" (click)="next(1)" class="list-group-item list-group-item-action options">Loveseat</a><br>
-    <a href="javascript:;" (click)="next(2)" class="list-group-item list-group-item-action options">Sectional</a><br>    
-  </div>-->
+  <div class="list-group" id="changing_div">
+    <button (click)="next(0)" class="list-group-item list-group-item-action options">Sofa</button><br>
+    <button (click)="next(1)" class="list-group-item list-group-item-action options">Loveseat</button><br>
+    <button (click)="next(2)" class="list-group-item list-group-item-action options">Sectional</button><br>    
+  </div>
+
+  <div class="list-group" id="changing_div2" hidden>
+    <button (click)="nexta(3)" class="list-group-item list-group-item-action options">Classic</button><br>
+    <button (click)="nexta(4)" class="list-group-item list-group-item-action options">Contemporary</button><br>
+    <button (click)="nexta(5)" class="list-group-item list-group-item-action options">Reset</button><br>
+  </div>
 </div>

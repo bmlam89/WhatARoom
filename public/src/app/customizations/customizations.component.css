@@ -4,10 +4,7 @@
     text-align: center;
 }
 
-#changing_div{
-    width:163px;
-    height:183px;
-}
 .options{
     border: solid thin red;
+    text-align: center;
 }

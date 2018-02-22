@@ -21,15 +21,21 @@ export class CustomizationsComponent implements OnInit {
     }else if(val == 2){
       console.log('sectional');
     }
-
-
-    $('.list-group').html("<a href='javascript:;' (click)='nexta(3)' class=\"list-group-item list-group-item-action options\">Contemporary</a><br>\
-    <a href='javascript:;' (click)='nexta(4)' class='list-group-item list-group-item-action options'>Classic</a><br>")
-    $('.options').css("border","solid thin red");
+    
+    $('#changing_div').attr('hidden','hidden');
+    $('#changing_div2').removeAttr('hidden');
   }
+  
   nexta(val){
-    if(val == 3){
-      console.log('contemporary');
+ 
+    if(val==3){
+      console.log('classic',val);
+    }else if(val == 4){
+      console.log('contemporary',val);
+    }else{
+      $('#changing_div').removeAttr('hidden');
+      $('#changing_div2').attr('hidden','hidden');
     }
-  }
+  } 
+
 }
