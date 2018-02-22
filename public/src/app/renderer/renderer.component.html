@@ -1,1 +1,91 @@
-<router-outlet name="results"></router-outlet>
+<div class="col-sm-9 renderer">
+  <div class="row">
+    
+    <div class="col-sm-4 x">
+     <div class="product_wrapper">
+        <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+      </div>
+    </div>
+
+    <div class="col-sm-4 x">
+     <div class="product_wrapper">
+        <img src="/assets/images/product.jpg" class="product">
+      </div>
+    </div>
+
+    <div class="col-sm-4 x">
+     <div class="product_wrapper">
+        <img src="/assets/images/product.jpg" class="product">
+      </div>
+    </div>  
+  </div>
+
+  <div class="row">
+    
+    <div class="col-sm-4 x">
+     <div class="product_wrapper">
+        <img src="/assets/images/product.jpg" class="product">
+      </div>
+    </div>
+    
+    <div class="col-sm-4 x">
+     <div class="product_wrapper">
+        <img src="/assets/images/product.jpg" class="product">
+      </div>
+    </div>  
+    
+    <div class="col-sm-4 x">
+     <div class="product_wrapper">
+        <img src="/assets/images/product.jpg" class="product">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    
+    <div class="col-sm-4 x">
+      <div class="product_wrapper">
+        <img src="/assets/images/product.jpg" class="product">
+      </div>
+    </div>
+    
+    <div class="col-sm-4 x">
+      <div class="product_wrapper">
+        <img src="/assets/images/product.jpg" class="product">
+      </div>
+    </div>
+   
+   <div class="col-sm-4 x">
+     <div class="product_wrapper">
+        <img src="/assets/images/product.jpg" class="product">
+      </div>
+  </div>
+
+  <div id="product_modal" class="modal">
+
+    <div class="modal-content">
+      <div class="row">
+
+        <div class="col-xs-6">
+          <p>asdfasdfasdfasdfasdf</p>
+        </div>
+
+        <div class="col-xs-6">
+          <h6>Summary</h6>
+          <p>$1099</p>
+          <p>Extra Firm</p>
+          <p>Contemporary Sectional</p>
+          <div class="row">
+            <div class="col-xs-6">
+              <button (click)="close_modal()">Back to Browsing</button>
+            </div>
+            <div class="col-xs-6">
+              <button (click)="close_modal()">Check Out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
