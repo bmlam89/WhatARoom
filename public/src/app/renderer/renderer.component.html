@@ -1,10 +1,12 @@
-<div class="col-sm-9 renderer">
-  <div class="row">
+
+  <!--<h3>Styles</h3>
+  <div class="row renderer">
     
     <div class="col-sm-4 x">
      <div class="product_wrapper">
         <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
       </div>
+      <p>Description goes here</p>
     </div>
 
     <div class="col-sm-4 x">
@@ -86,6 +88,104 @@
         </div>
       </div>
     </div>
+  </div>-->
+
+  <div class="col-xs-12">
+    <h1>Pick a style</h1>
+  </div>
+  <div class="col-xs-6 x" *ngFor="let sofa of sofas">
+    <img src="/assets/images/product.jpg" (click)="load_modal(sofa)" class="product">
+    <h5>{{sofa.style}}</h5>
   </div>
 
-</div>
+  <!--<div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Olinee</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Chandler</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>A014</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Jasper</h5>
+  </div>
+  
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Richmond</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Abu</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Willow</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Carson</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Danny</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Tiffany</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>Rio</h5>
+  </div>
+
+  <div class="col-xs-6 x">
+    <img src="/assets/images/product.jpg" (click)="load_modal()" class="product">
+    <h5>A012</h5>
+  </div>-->
+
+
+<div id="product_modal" class="modal">
+
+    <div class="modal-content"> 
+      <div class="row">
+
+        <div class="col-xs-6">
+          <p>Main sofa image goes here</p>
+          <p>Alternative sofa images go here</p>
+        </div>
+
+        <div class="col-xs-6">
+          <h4>Item Summary</h4>
+          <p>Style: {{data.style}}</p>
+          <p>Starting price: {{data.price}}</p>
+          <p>Manufacturer: {{data.manufacturer}}</p>
+          <div class="row">
+            <div class="col-xs-6">
+              <button (click)="close_modal()">Back to Browsing</button>
+            </div>
+            <div class="col-xs-6">
+              <button (click)="close_modal()">Customizations</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>                
+
+  
+
+
