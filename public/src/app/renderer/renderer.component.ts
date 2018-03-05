@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Sofa } from '../sofa'
+import { Router } from '@angular/router';
 declare var $: any;
 declare var jQuery: any;
 @Component({
@@ -25,7 +26,8 @@ export class RendererComponent implements OnInit {
   s12 = new Sofa('Danny','Modus','$1199');
   s13 = new Sofa('Tiffany','Modus','$1199');
   s14 = new Sofa('Rio','Modus','$1199');
-  constructor() {
+  
+  constructor(private router: Router) {
   
 
 
@@ -48,6 +50,7 @@ export class RendererComponent implements OnInit {
 
   close_modal(){
     $('#product_modal').hide();
+    this.router.navigate(['customizations']);
   }
   
 

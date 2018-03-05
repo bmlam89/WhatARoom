@@ -5,8 +5,8 @@ import{ CustomizationsComponent } from './customizations/customizations.componen
 import { RendererComponent } from './renderer/renderer.component';
 
 const routes: Routes = [
-  {path: '', component: CustomizationsComponent, outlet: "custom"},
-  {path: '', component: RendererComponent, outlet: "renderer"}
+  {path: '', component: RendererComponent},
+  {path: 'customizations', component: CustomizationsComponent}
 ];
 
 @NgModule({
