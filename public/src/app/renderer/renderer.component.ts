@@ -48,9 +48,11 @@ export class RendererComponent implements OnInit {
     $('#product_modal').show();
   }
 
-  close_modal(){
+  close_modal(val){
+    if (val == 1){
+      this.router.navigate(['customizations']);
+    }
     $('#product_modal').hide();
-    this.router.navigate(['customizations']);
   }
   
 
